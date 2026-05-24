@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="张三的个人主页，展示个人介绍、项目作品、技能经历和联系方式。" />
+  <meta name="keywords" content="个人主页, 前端开发, 作品集, 简历, Portfolio" />
+  <meta name="author" content="张三" />
+
+  <title>张三 | 个人主页</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="返回首页">张三</a>
+
+    <button class="menu-button" type="button" aria-label="打开导航菜单">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="#about">关于我</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Frontend Developer / UI Builder</p>
+        <h1>你好，我是张三。</h1>
+        <p class="hero-text">
+          我专注于构建清晰、稳定、体验良好的 Web 产品，擅长前端开发、交互实现和界面优化。
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">查看作品</a>
+          <a class="button secondary" href="#contact">联系我</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="./assets/avatar.svg" alt="张三头像" />
+        <div>
+          <strong>张三</strong>
+          <span>前端工程师</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p>About</p>
+        <h2>关于我</h2>
+      </div>
+
+      <div class="about-layout">
+        <p>
+          我是一名前端工程师，关注代码质量、页面性能和用户体验。日常工作中，我会使用
+          HTML、CSS、JavaScript、Vue/React 等技术构建可维护的 Web 应用。
+        </p>
+        <p>
+          我喜欢把复杂的信息整理成简单、自然的界面，也重视响应式布局、可访问性和跨浏览器兼容性。
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section muted">
+      <div class="section-heading">
+        <p>Skills</p>
+        <h2>技能栈</h2>
+      </div>
+
+      <div class="skill-grid">
+        <article>
+          <h3>前端基础</h3>
+          <p>HTML5、CSS3、JavaScript、TypeScript、响应式布局、浏览器兼容。</p>
+        </article>
+
+        <article>
+          <h3>框架工具</h3>
+          <p>Vue、React、Vite、Webpack、Pinia、Redux、Axios、Git。</p>
+        </article>
+
+        <article>
+          <h3>体验优化</h3>
+          <p>性能优化、组件封装、交互细节、可访问性、移动端适配。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p>Projects</p>
+        <h2>项目作品</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image project-one"></div>
+          <div class="project-content">
+            <h3>企业官网重构</h3>
+            <p>使用响应式布局重构官网，提高移动端体验与页面加载速度。</p>
+            <a href="#" aria-label="查看企业官网重构项目">查看项目</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image project-two"></div>
+          <div class="project-content">
+            <h3>后台管理系统</h3>
+            <p>搭建数据看板、权限管理、表单配置和多页面业务流程。</p>
+            <a href="#" aria-label="查看后台管理系统项目">查看项目</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image project-three"></div>
+          <div class="project-content">
+            <h3>个人效率工具</h3>
+            <p>实现任务管理、标签筛选、本地存储和轻量交互动画。</p>
+            <a href="#" aria-label="查看个人效率工具项目">查看项目</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p>Contact</p>
+        <h2>联系我</h2>
+      </div>
+
+      <div class="contact-box">
+        <p>如果你对我的经历、项目或合作机会感兴趣，可以通过下面的方式联系我。</p>
+
+        <div class="contact-links">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 张三. All rights reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

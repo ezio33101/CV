@@ -33,7 +33,7 @@ http://localhost:8000
 ### 2. 保存当前修改到 git
 
 ```text
-检查当前修改，更新AGENTS.md，然后把当前修改提交到 git，写一个简洁的 commit message。
+然后把当前修改提交到 git，写一个简洁的 commit message。
 ```
 
 ### 3. 推送到 GitHub

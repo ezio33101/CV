@@ -1,13 +1,43 @@
-# Hairan Zhang CV 网页
+# Hairan Zhang Academic CV
 
-这是一个纯静态的个人 CV 网页，可直接部署到任意静态站点服务。
+Hairan(Sam) Zhang 的静态 Academic CV 网页，展示教育经历、工作经历、代表作品与联系方式。
 
-## 最简洁部署步骤
+## 使用方式
 
-1. 确认入口文件为 `index.html`，样式文件为 `styles.css`，脚本文件为 `styles.js`。
-2. 将整个目录上传到 GitHub 仓库。
-3. 在仓库中打开 `Settings` → `Pages`。
-4. `Source` 选择 `Deploy from a branch`，分支选择 `main`，目录选择 `/root`。
-5. 保存后等待 GitHub Pages 构建完成，即可通过生成的链接访问。
+直接打开：
 
-本地预览可直接双击 `index.html` 打开。
+```text
+index.html
+```
+
+或在项目目录启动本地预览：
+
+```bash
+python3 -m http.server 8000
+```
+
+然后访问：
+
+```text
+http://localhost:8000
+```
+
+## Prompt 模板
+
+### 1. 修改内容
+
+```text
+把代表作品部分改成更适合合作办学和国际教育项目展示的表达。
+```
+
+### 2. 保存当前修改到 git
+
+```text
+检查当前修改，更新AGENTS.md，然后把当前修改提交到 git，写一个简洁的 commit message。
+```
+
+### 3. 推送到 GitHub
+
+```text
+把本地提交 push 到 origin main。
+```

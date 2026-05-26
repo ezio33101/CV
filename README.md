@@ -22,22 +22,8 @@ python3 -m http.server 8000
 http://localhost:8000
 ```
 
-## Prompt 模板
-
-### 1. 修改内容
+## 提交当前修改到 git
 
 ```text
-把代表作品部分改成更适合合作办学和国际教育项目展示的表达。
-```
-
-### 2. 保存当前修改到 git
-
-```text
-然后把当前修改提交到 git，写一个简洁的 commit message。
-```
-
-### 3. 推送到 GitHub
-
-```text
-把本地提交 push 到 origin main。
+把当前修改提交到 git，写一个简洁的 commit message，并且 push 到 origin main。
 ```

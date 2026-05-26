@@ -108,6 +108,7 @@ https://github.com/ezio33101/CV.git
 
 ## 最近更新
 
+- 教育经历已补充本科阶段：苏州工学院，英语专业。
 - 为 `README.md` 新增了 Prompt 模板区块，方便后续直接复用常见指令。
 - 当前头像已替换为 `assets/hairan-zhang.jpeg`。
 - 冗余文件 `latest.html`、`张三-个人主页.html`、`assets/avatar.svg`、`.DS_Store` 已清理。

@@ -2,7 +2,7 @@
 
 ## 项目概览
 
-这是 Hairan(Sam) Zhang 的静态 Academic CV 网页项目，部署目标是 GitHub Pages：
+这是 Hairan(Sam) Zhang 的静态个人主页项目，部署目标是 GitHub Pages：
 
 ```text
 https://ezio33101.github.io/CV/
@@ -18,7 +18,7 @@ https://ezio33101.github.io/CV/
 
 ## 当前内容定位
 
-网页定位为 academic / professional CV，重点展示：
+网页定位为成熟、克制的 personal / professional homepage，不是传统简历清单；重点展示：
 
 - 合作办学
 - 国际教育
@@ -31,7 +31,7 @@ https://ezio33101.github.io/CV/
 - 院校关系维护
 - 跨文化沟通协调
 
-当前个人简介强调：专注于合作办学与国际教育项目发展，主要面向东南亚市场，推动海外教育资源与国内院校之间的合作办学项目落地。
+当前个人简介强调：关注合作办学与国际教育项目发展，主要面向东南亚市场，推动海外教育资源与国内院校之间建立清晰、稳定、可持续的合作关系。
 
 ## 页面结构
 
@@ -40,8 +40,8 @@ https://ezio33101.github.io/CV/
 页面主要区块：
 
 1. 顶部导航
-2. Hero 学术主页首屏
-3. Academic Profile 个人简介
+2. Hero 个人主页首屏
+3. Professional Profile 个人简介
 4. Education 教育经历
 5. Experience 工作经历
 6. Selected Works 代表作品
@@ -69,7 +69,7 @@ https://ezio33101.github.io/CV/
 
 ## 关键文件说明
 
-- `index.html`：网页主体内容。修改简历文本、链接、区块结构时主要编辑这里。
+- `index.html`：网页主体内容。修改个人主页文本、链接、区块结构时主要编辑这里。
 - `styles.css`：完整视觉样式。当前遵循 `DESIGN.md` 中的 StudioBlank Design System：黑白灰极简、充足留白、严格网格、0 圆角、无阴影、无渐变、无装饰图形。
 - `styles.js`：轻量脚本，用于自动更新页脚年份、移动端导航开合。
 - `assets/hairan-zhang.jpeg`：当前头像图片。
@@ -105,11 +105,14 @@ https://github.com/ezio33101/CV.git
 - 如替换头像，优先放入 `assets/`，并同步修改 `index.html` 中的图片路径。
 - 如修改页面定位、核心内容、文件结构或部署方式，必须同步更新本文件。
 - 当前没有构建流程；本地预览可直接打开 `index.html`，或运行静态服务器。
+- 页面内容应避免过度学生化或简历流水账表达；低质量奖项、计算机一级、C1 驾照等与当前主页定位无关的信息不应展示。
 
 ## 最近更新
 
-- 语言与专业证书已补充英语专业八级（TEM-8 / 专八），展示于 Education 区块的基础资质条目中。
-- 根据旧版 PDF 简历补充了基础背景信息：本科核心课程、语言证书、校园获奖、早期英语教学实践与真实联系方式；旧实习/兼职内容仅作为基础经历，不作为页面核心重点。
+- 页面定位已从 Academic CV 调整为 Personal Homepage，文案更偏成熟的个人主页表达。
+- 已删除三等奖学金、计算机一级考试、C1 驾照等弱相关或低质量资质展示，并弱化校园经历色彩。
+- 语言与专业证书已补充英语专业八级（TEM-8 / 专八），展示于 Education 区块的语言能力条目中。
+- 根据旧版 PDF 简历保留了与当前定位相关的本科核心课程、语言证书、早期英语教学实践与真实联系方式；低质量校园奖项和弱相关证照不作为页面内容展示。
 - 教育经历已补充本科阶段：苏州工学院，英语专业。
 - 为 `README.md` 新增了 Prompt 模板区块，方便后续直接复用常见指令。
 - 当前头像已替换为 `assets/hairan-zhang.jpeg`。

@@ -1,6 +1,6 @@
-# Hairan Zhang Academic CV
+# Hairan Zhang Personal Homepage
 
-Hairan(Sam) Zhang 的静态 Academic CV 网页，展示教育经历、工作经历、代表作品与联系方式。
+Hairan(Sam) Zhang 的静态个人主页，展示国际教育、合作办学、项目发展与跨文化沟通方向的专业实践。
 
 ## 使用方式
 

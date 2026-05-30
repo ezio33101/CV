@@ -43,8 +43,8 @@ https://ezio33101.github.io/CV/
 2. Hero 个人主页首屏
 3. Professional Profile 个人简介
 4. Education 教育经历
-5. Experience 工作经历
-6. Selected Works 代表作品
+5. Experience 工作主线
+6. Project Experience 项目经历
 7. Competencies 核心能力
 8. Contact 联系方式
 9. Footer 页脚
@@ -117,3 +117,5 @@ https://github.com/ezio33101/CV.git
 - 为 `README.md` 新增了 Prompt 模板区块，方便后续直接复用常见指令。
 - 当前头像已替换为 `assets/hairan-zhang.jpeg`。
 - 冗余文件 `latest.html`、`张三-个人主页.html`、`assets/avatar.svg`、`.DS_Store` 已清理。
+- 主页内容已重组为合作办学与国际教育项目主线，Experience 区块改为工作主线，原 Selected Works 区块改为 7 个项目经历卡片。
+- 新增的重点项目包括学生赴马来西亚学习支持、揭牌仪式与联合管理委员会、招生宣传、短期外教运营、申报材料支持与申报全流程参与等。

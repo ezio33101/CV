@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
+<body class="home-interface">
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
 
@@ -29,15 +29,15 @@
     </button>
 
     <nav class="nav" aria-label="主导航">
-      <a href="#education">教育经历</a>
       <a href="#experience">工作主线</a>
       <a href="#works">项目经历</a>
       <a href="#contact">联系方式</a>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero academic-hero">
+  <main class="homepage-shell" aria-label="主页与横向扩展板块浏览">
+    <section id="home" class="home-panel" aria-label="首页信息纵向浏览">
+    <section class="hero academic-hero">
       <div class="hero-content">
         <p class="eyebrow">Personal Homepage</p>
         <h1>Hairan(Sam) Zhang</h1>
@@ -86,7 +86,7 @@
       </aside>
     </section>
 
-    <section class="section intro-section">
+    <section id="profile" class="section intro-section">
       <div class="section-heading centered">
         <p>Profile</p>
         <h2>Professional Profile</h2>
@@ -126,6 +126,40 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section id="competencies" class="section competencies-section">
+      <div class="section-heading centered">
+        <p>Competencies</p>
+        <h2>核心能力</h2>
+      </div>
+      <div class="skills-container">
+        <span class="skill-tag">Joint Education Program Operations</span>
+        <span class="skill-tag">Student Mobility Support</span>
+        <span class="skill-tag">Foreign Teacher Management</span>
+        <span class="skill-tag">Application Materials Coordination</span>
+        <span class="skill-tag">EMGS / E-VISA Follow-up</span>
+        <span class="skill-tag">On-site Event Execution</span>
+        <span class="skill-tag">University Partnership Communication</span>
+        <span class="skill-tag">Cross-Cultural Communication</span>
+        <span class="skill-tag">Bilingual Education Translation</span>
+        <span class="skill-tag">Team Coordination</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section academic-contact">
+      <div class="contact-shell">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>联系方式</h2>
+          <p>欢迎就合作办学、国际教育项目、外教管理、海外接待、院校合作沟通与英语教育项目方向联系我。</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:18896733101@163.com">Email: 18896733101@163.com</a>
+          <a href="tel:+8618896733101">Phone: +86 188-9673-3101</a>
+        </div>
+      </div>
+    </section>
     </section>
 
     <section id="experience" class="section">
@@ -207,39 +241,6 @@
         </article>
       </div>
 
-    </section>
-
-    <section class="section competencies-section">
-      <div class="section-heading centered">
-        <p>Competencies</p>
-        <h2>核心能力</h2>
-      </div>
-      <div class="skills-container">
-        <span class="skill-tag">Joint Education Program Operations</span>
-        <span class="skill-tag">Student Mobility Support</span>
-        <span class="skill-tag">Foreign Teacher Management</span>
-        <span class="skill-tag">Application Materials Coordination</span>
-        <span class="skill-tag">EMGS / E-VISA Follow-up</span>
-        <span class="skill-tag">On-site Event Execution</span>
-        <span class="skill-tag">University Partnership Communication</span>
-        <span class="skill-tag">Cross-Cultural Communication</span>
-        <span class="skill-tag">Bilingual Education Translation</span>
-        <span class="skill-tag">Team Coordination</span>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section academic-contact">
-      <div class="contact-shell">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>联系方式</h2>
-          <p>欢迎就合作办学、国际教育项目、外教管理、海外接待、院校合作沟通与英语教育项目方向联系我。</p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:18896733101@163.com">Email: 18896733101@163.com</a>
-          <a href="tel:+8618896733101">Phone: +86 188-9673-3101</a>
-        </div>
-      </div>
     </section>
   </main>
 

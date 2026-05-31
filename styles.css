@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html:has(.home-interface) {
+  overflow: hidden;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -29,6 +33,11 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
   text-rendering: geometricPrecision;
+}
+
+.home-interface {
+  height: 100vh;
+  overflow: hidden;
 }
 
 body::before,
@@ -108,10 +117,68 @@ img {
   transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: var(--color-primary);
   background: var(--color-soft);
   border-color: var(--color-line);
+}
+
+.home-interface .site-header {
+  position: fixed;
+}
+
+.home-interface .site-footer {
+  display: none;
+}
+
+.homepage-shell {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 72px);
+  margin-top: 72px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-line);
+}
+
+.homepage-shell::-webkit-scrollbar {
+  height: 6px;
+}
+
+.homepage-shell::-webkit-scrollbar-track {
+  background: var(--color-line);
+}
+
+.homepage-shell::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+.homepage-shell > .home-panel,
+.homepage-shell > .section {
+  flex: 0 0 100vw;
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  overflow-y: auto;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.homepage-shell > .section {
+  padding: clamp(72px, 8vw, 112px) var(--space-page);
+  border-top: 0;
+}
+
+.homepage-shell > .section > * {
+  width: min(var(--max-width), 100%);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .menu-button {
@@ -669,6 +736,11 @@ img {
 @media (max-width: 760px) {
   .site-header {
     min-height: 64px;
+  }
+
+  .homepage-shell {
+    height: calc(100vh - 64px);
+    margin-top: 64px;
   }
 
   .menu-button {

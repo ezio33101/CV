@@ -36,6 +36,7 @@ https://ezio33101.github.io/CV/
 ## 页面结构
 
 入口文件：`index.html`
+项目类型页：`project-student-support.html`、`project-teacher-operations.html`、`project-application-governance.html`
 
 页面主要区块：
 
@@ -44,10 +45,16 @@ https://ezio33101.github.io/CV/
 3. Professional Profile 个人简介
 4. Education 教育经历
 5. Experience 工作主线
-6. Project Experience 项目经历
+6. Project Experience 项目经历分类入口
 7. Competencies 核心能力
 8. Contact 联系方式
 9. Footer 页脚
+
+项目类型页分别展示 7 个项目经历中的对应类别：
+
+1. Student Development & Recruitment 学生发展与招生支持
+2. Foreign Teacher Operations 外教运营与项目落地
+3. Joint Program Application & Governance 合作办学申报与院校治理
 
 ## 文件结构
 
@@ -56,6 +63,9 @@ https://ezio33101.github.io/CV/
 ├── AGENTS.md
 ├── README.md
 ├── index.html
+├── project-student-support.html
+├── project-teacher-operations.html
+├── project-application-governance.html
 ├── styles.css
 ├── styles.js
 ├── assets/
@@ -69,7 +79,10 @@ https://ezio33101.github.io/CV/
 
 ## 关键文件说明
 
-- `index.html`：网页主体内容。修改个人主页文本、链接、区块结构时主要编辑这里。
+- `index.html`：网页主体内容。修改个人主页文本、链接、首页区块结构时主要编辑这里。
+- `project-student-support.html`：学生发展与招生支持类型页，只展示学生流动与招生宣传相关项目。
+- `project-teacher-operations.html`：外教运营与项目落地类型页，只展示短期外教运营相关项目。
+- `project-application-governance.html`：合作办学申报与院校治理类型页，只展示申报材料、会议治理与外方接待相关项目。
 - `styles.css`：完整视觉样式。当前遵循 `DESIGN.md` 中的 StudioBlank Design System：黑白灰极简、充足留白、严格网格、0 圆角、无阴影、无渐变、无装饰图形。
 - `styles.js`：轻量脚本，用于自动更新页脚年份、移动端导航开合。
 - `assets/hairan-zhang.jpeg`：当前头像图片。
@@ -106,6 +119,7 @@ https://github.com/ezio33101/CV.git
 - 如修改页面定位、核心内容、文件结构或部署方式，必须同步更新本文件。
 - 当前没有构建流程；本地预览可直接打开 `index.html`，或运行静态服务器。
 - 页面内容应避免过度学生化或简历流水账表达；低质量奖项、计算机一级、C1 驾照等与当前主页定位无关的信息不应展示。
+- 首页项目区应保持分类导览定位，具体项目细节优先维护在三个独立项目类型页，避免首页再次变成过长的简历清单，也避免单个详情页混合展示多个定位不同的类型。
 
 ## 最近更新
 
@@ -119,3 +133,6 @@ https://github.com/ezio33101/CV.git
 - 冗余文件 `latest.html`、`张三-个人主页.html`、`assets/avatar.svg`、`.DS_Store` 已清理。
 - 主页内容已重组为合作办学与国际教育项目主线，Experience 区块改为工作主线，原 Selected Works 区块改为 7 个项目经历卡片。
 - 新增的重点项目包括学生赴马来西亚学习支持、揭牌仪式与联合管理委员会、招生宣传、短期外教运营、申报材料支持与申报全流程参与等。
+- 项目详情已由单一 `projects.html` 拆分为三个独立类型页，并移除项目卡片中的可见编号，避免不同类型页面中出现不连贯编号。
+- 首页 Project Experience 分类卡片已改为普通卡片加“查看详情”按钮，避免用户误以为分类卡片没有更多内容可点击。
+- 三个项目类型页 Hero 区域仅保留“返回项目分类”按钮，不再放置跨类型详情页跳转按钮，保持单页定位聚焦。

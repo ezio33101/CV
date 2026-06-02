@@ -124,6 +124,32 @@ img {
   border-color: var(--color-line);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-toggle {
+  min-width: 44px;
+  min-height: 38px;
+  padding: 0 12px;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-line);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.language-toggle:hover {
+  background: var(--color-soft);
+  border-color: var(--color-primary);
+}
+
 .home-interface .site-header {
   position: fixed;
 }
@@ -745,6 +771,16 @@ img {
 
   .menu-button {
     display: block;
+  }
+
+  .header-actions {
+    gap: 10px;
+  }
+
+  .language-toggle {
+    min-width: 40px;
+    min-height: 36px;
+    padding: 0 10px;
   }
 
   .nav {

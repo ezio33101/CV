@@ -212,9 +212,9 @@ const includesChinese = (text) => /[\u3400-\u9fff]/.test(text);
 
 const getSavedLanguage = () => {
   try {
-    return window.localStorage?.getItem(languageStorageKey) || "zh";
+    return window.localStorage?.getItem(languageStorageKey) || "en";
   } catch {
-    return "zh";
+    return "en";
   }
 };
 
